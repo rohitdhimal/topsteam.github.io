@@ -1,0 +1,53 @@
+.navbar{
+    background: #E2AB2E;
+}
+
+.head-text{
+    font-size: 20px;
+}
+
+.head-text:hover{
+    color: white;
+}
+
+/*  */
+
+.img-fluid{
+    height: 600px;
+}
+
+.bg-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/*  */
+
+.info-card{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+.card-hov:hover{
+    background-color: #E2AB2E;
+    color: white;
+}
+
+.icons{
+    font-size: 50px;
+    color:#3B1606;
+}
+
+/* Accordins */
+.card > .card-header{
+    background-color:#3B1606;
+}
+
+
+/* footer */
+.page-footer{
+    background: #E2AB2E;
+}
