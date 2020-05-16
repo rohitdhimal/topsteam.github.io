@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Top Steam | Welcome</title>
 
-    <!-- Styles -->
+    <!-- css Styles -->
     <link rel="stylesheet" href="./css/style.css">
 
     <!-- Styles Hrefs -->
@@ -15,7 +15,7 @@
 <body>
 
     <!-- Header -->
-        <nav class="navbar navbar-expand-lg navbar-light p-4 ">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top shadow p-4 ">
             <div class="container">
 
                 <a class="navbar-brand " href="./index.html">
@@ -28,27 +28,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link head-text text-light" href="#">Home <span class="sr-only">(current)</span></a>
+                            <a class="nav-link head-text text-light" href="#top">Home <span class="sr-only">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link head-text text-light" href="#">About</a>
+                            <a class="nav-link head-text text-light" href="#bestil">Bestil TopSteam</a>
                         </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle head-text text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Kundeservice
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">Action</a>
-                                <a class="dropdown-item" href="#">Another action</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Something else here</a>
-                            </div>
+                        <li class="nav-item">
+                            <a class="nav-link head-text text-light" href="kundeservice.html">Kundeservice</a>
                         </li>
                     </ul>
-                    <form class="form-inline my-2 my-lg-0">
-                    <span class="mr-5 text-light font-weight-bold"><i class="fas fa-phone-alt"></i> 12345678 </span>
-                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">login</button>
-                    </form>
+                    
                 </div>
             </div>
         </nav>
@@ -58,14 +47,13 @@
     
     <!-- Hero Image -->
 
-    <img src="./img/hero-image.jpg" class="img-fluid ass" alt="">
+    <img src="./img/hero-image.jpg" class="img-fluid ass" id="top" alt="">
     <div class="bg-overlay">
         <div class="col-md text-center text-light">
-            <h1 class="font-weight-bold"> Auto Repair </h1>  <h1 class="text-warning"> Services</h1> 
-            <h4>Get clean car both interior and exterior</h4>
-            <br>
-            <button type="button" class="btn btn-outline-light btn-lg my-2 my-sm-0">Check Our Prices</button>
-        </div>  
+            <h1 class="font-weight-bold hero-text"> Auto Repair </h1>  <h1 class="text-warning hero-text"> Services</h1> 
+            <h4 class="hero-text">Get clean car both interior and exterior</h4>
+            <a type="button" class="btn btn-outline-light btn-lg my-2 my-sm-1" href="#bestil">Check Our Prices</a>
+        </div>
     </div>
 
     <br>
@@ -73,7 +61,7 @@
     <!-- End Hero Image -->
 
     <!-- Info -->
-    <div class="container info-card clearfix mb-5">
+    <div class="container info-card clearfix mt-5 my-5 mb-5">
 
         <div class="row">
             <div class="col-md-4 col-lg-4">
@@ -105,15 +93,7 @@
         </div>
 
     </div>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
     <!-- End Info -->
 
     <div class="container clearfix">
@@ -182,7 +162,10 @@
 
 
             <!-- Accordins -->
-            <div class="mt-5 mb-5">
+
+            <h2 class="text-center mb-3 " id="bestil">Bestil TopSteam</h2>
+
+            <!-- <div class="mt-5 mb-5">
                 <div id="accordion">
                     <div class="card mb-2">
                         <div class="card-header" id="headingOne">
@@ -228,6 +211,38 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+
+            <div class="card mt-5 mb-5">
+                <div class="row mx-5 my-5 justify-content-center">
+                    <div class="col-md-6 col-sm-6">
+                        <label for="formGroupExampleInput">Email</label>
+                            <select class="form-control">
+                                <option>Ford</option>
+                                <option>Buggati</option>
+                                <option>Mustang</option>
+                            </select>
+                    </div>
+                    <div class="col-md-3 col-sm-3">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">Email</label>
+                            <select class="form-control">
+                                <option>123</option>
+                                <option>456</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-3 ">
+                        <div class="form-group">
+                            <label for="formGroupExampleInput">.</label>
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
+                    </div>
+                    
+
+                </div>
+
             </div>
 
             <!-- End Accordin -->
@@ -238,7 +253,7 @@
     <!-- End -->
 
     <!--Start Footer -->
-    <footer class="page-footer p-5 text-light">
+    <footer class=" page-footer p-5 text-light">
         <div class="container">
             <div class="row">
                 <div class="col l6 s12">
@@ -258,8 +273,7 @@
         </div>
         <div class="footer-copyright">
             <div class="container">
-                © 2014 Copyright Text
-                <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
+                © 2020 Copyright TopSteam
             </div>
         </div>
     </footer>
